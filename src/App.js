@@ -1,24 +1,14 @@
-import logo from './logo.svg';
+import logo from "./assets/ZH style 2 WIP3pdf.jpg";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form className = "container">
+      <img src={logo} alt="Logo" className = "logo"></img>
+      <input type="email" placeholder="Email"></input>
+      <input type="password" placeholder="Password" ></input>
+      <button type = "submit" className="btn">Submit</button>
+    </form>
   );
 }
 
